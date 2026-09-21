@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планувальник подорожей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Планувальник подорожей</h1>
+        <nav>
+            <a href="#trips">Мої подорожі</a>
+            <a href="#details">Деталі подорожі</a>
+            <a href="#budget">Бюджет</a>
+        </nav>
+    </header>
+    <div class="page-layout">
+        <main>
+            <section id="trips">
+                <h2>Мої подорожі</h2>
+                <div class="cards">
+                    <article>
+                        <h3>Париж, Франція</h3>
+                        <img src="assets/img/paris.jpg" alt="Вид на Ейфелеву вежу ввечері">
+                        <p>Дати: 15.06.2026 – 22.06.2026</p>
+                        <span class="badge badge--planned">✈️ Заплановано</span>
+                        
+                    </article>
+
+                    <article>
+                        <h3>Рим, Італія</h3>
+                        <img src="assets/img/rome.jpg" alt="Колізей у Римі під сонячним промінням">
+                        <p>Дати: 10.09.2026 – 18.09.2026</p>
+                        <span class="badge badge--in-progress">⏳ В процесі бронювання</span>
+                        
+                    </article>
+
+                    <article>
+                        <h3>Барселона, Іспанія</h3>
+                        <img src="assets/img/barcelona.jpg" alt="Храм Святого Сімейства в Барселоні">
+                        <p>Дати: 05.10.2026 – 12.10.2026</p>
+                        <span class="badge badge--planned">✈️ Заплановано</span>
+                    </article>
+                    <article>
+                        <h3>Відень, Австрія</h3>
+                        <img src="assets/img/wien.jpg" alt="Храм Святого Сімейства в Барселоні">
+                        <p>Дати: 07.10.2026 – 9.10.2026</p>
+                        <span class="badge badge--completed">✅ Завершено</span>
+                        
+                    </article>
+                </div>
+            </section>
+        
+            <section id="details">
+                <h2>Деталі обраної подорожі</h2>
+                <p>Маршрут, заброньовані готелі та список необхідних речей для Парижа.</p> 
+          
+                <form>
+                    <label for="notes">Замітки до поїздки:</label>
+                    <input type="text" id="notes" name="notes" placeholder="Введіть нотатки">
+                </form>
+            </section>
+        </main>
+        
+        <aside id="budget" tabindex="0">
+            <h2>Бюджет подорожі</h2>
+            <div class="budget-amount">1 500 €</div>
+            <ul>
+                <li>Переліт: 200 €</li>
+                <li>Проживання: 800 €</li>
+                <li>Харчування та екскурсії: 500 €</li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Навчальний проєкт з ПВЗ. Виконав Кутовенко Ярослав ІП-52.</p>
+    </footer>
+</body>
+</html>
