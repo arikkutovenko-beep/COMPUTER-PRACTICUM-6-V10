@@ -30,7 +30,7 @@ const trips = [
         endDay: '12.10.2026', 
         days: 7, 
         budget: 900, 
-        status: '✈️ Заплановано',
+        status: '✈️️ Заплановано',
         badgeClass: 'badge--planned',
         imgSrc: 'assets/img/barcelona.jpg',
         imgAlt: 'Храм Святого Сімейства в Барселоні'
@@ -48,8 +48,10 @@ const trips = [
     }
 ];
 
+// Обчислює середні витрати на один день подорожі та округлює результат
 const costPerDay = trip => Math.round(trip.budget / trip.days);
 
+// Виводить у консоль деталі про кожну подорож та її категорію за бюджетом
 function processTrips(tripList) {
     console.log(' Список подорожей: ');
     for (const trip of tripList) {
@@ -82,10 +84,7 @@ staticCards.forEach(card => card.remove());
 
 const listContainer = document.querySelector('#trips #cards');
 
-/**
- * Рендерить список подорожей у DOM-дерево
- * @param {Array} tripsList - масив об'єктів подорожей
- */
+// Створює картки подорожей з потрібними тегами та додає їх на сторінку
 function renderTrips(tripsList) {
     listContainer.innerHTML = '';
 
@@ -129,6 +128,7 @@ function renderTrips(tripsList) {
     });
 }
 
+// Оновлює лічильник загальної кількості подорожей у блоці
 function totalTrips(tripsList) {
     const allTrips = document.querySelector('.page-layout #trips-count');
 
